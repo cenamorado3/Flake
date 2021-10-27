@@ -33,11 +33,11 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                     }
                     NavigationLink("Login", destination: Home(closure: {
-                        if(username == "A" && pw == "1")
+                        guard username == "A" && pw == "hero" else
                         {
-                            return true
+                            return false
                         }
-                        return false
+                        return true
 
                     }))
                     .foregroundColor(.mint)
