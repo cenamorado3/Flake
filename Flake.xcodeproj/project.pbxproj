@@ -16,6 +16,8 @@
 		ECB765AD2728F4F30063E330 /* FlakeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB765AC2728F4F30063E330 /* FlakeUITestsLaunchTests.swift */; };
 		ECB765BA2728FA100063E330 /* DI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB765B92728FA100063E330 /* DI.swift */; };
 		ECB765E22728FBF20063E330 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB765E12728FBF20063E330 /* Home.swift */; };
+		ECB765EA272A07C80063E330 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB765E9272A07C80063E330 /* LandingPage.swift */; };
+		ECB765EC272A0F790063E330 /* RollOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB765EB272A0F790063E330 /* RollOutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		ECB765AC2728F4F30063E330 /* FlakeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlakeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ECB765B92728FA100063E330 /* DI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DI.swift; sourceTree = "<group>"; };
 		ECB765E12728FBF20063E330 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		ECB765E9272A07C80063E330 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		ECB765EB272A0F790063E330 /* RollOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollOutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 				ECB765952728F4F20063E330 /* Preview Content */,
 				ECB765B92728FA100063E330 /* DI.swift */,
 				ECB765E12728FBF20063E330 /* Home.swift */,
+				ECB765E9272A07C80063E330 /* LandingPage.swift */,
+				ECB765EB272A0F790063E330 /* RollOutView.swift */,
 			);
 			path = Flake;
 			sourceTree = "<group>";
@@ -263,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB765EC272A0F790063E330 /* RollOutView.swift in Sources */,
 				ECB765922728F4F10063E330 /* ContentView.swift in Sources */,
+				ECB765EA272A07C80063E330 /* LandingPage.swift in Sources */,
 				ECB765902728F4F10063E330 /* FlakeApp.swift in Sources */,
 				ECB765E22728FBF20063E330 /* Home.swift in Sources */,
 				ECB765BA2728FA100063E330 /* DI.swift in Sources */,

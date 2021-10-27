@@ -1,18 +1,17 @@
 //
-//  ContentView.swift
+//  WrongPasswordView.swift
 //  Flake
 //
-//  Created by Christian Enamorado on 10/26/21.
+//  Created by Christian Enamorado on 10/27/21.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct WrongPasswordView: View {
     @State private var username: String = ""
     @State private var pw: String = ""
     var body: some View {
         NavigationView{
-            ZStack{
                 Color.blue.ignoresSafeArea()
                 VStack{
                     HStack{
@@ -33,7 +32,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                         
                     }
-                    NavigationLink("Login", destination: Home(_user: username, closure: {
+                    NavigationLink("Login", destination: Home(closure: {
                         guard username == "A" && pw == "*" else
                         {
                             return false
@@ -44,16 +43,12 @@ struct ContentView: View {
                     .foregroundColor(.mint)
                 }
             }
-        }
+        
     }
 }
 
-
-
-
-
-struct ContentView_Previews: PreviewProvider {
+struct WrongPasswordView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        WrongPasswordView()
     }
 }
