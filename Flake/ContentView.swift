@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+var container = DI()
 struct ContentView: View {
     @State private var username: String = ""
     @State private var pw: String = ""

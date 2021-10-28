@@ -8,23 +8,25 @@
 import SwiftUI
 var loaded = false
 struct LandingPage: View {
+    @ObservedObject var api = container.API
     var body: some View {
-        if(!loaded)
+        if(api.l)
+        {
+            RollOutView()
+        }
+        else
         {
             Text("Hello \(user)! We're getting ready for you.").foregroundColor(.mint)
-                .offset()
-                .animation(.spring(response: 0.8, dampingFraction: 0.001).repeatForever())
-                .task {
-                    await Task.sleep(2000)
-                    loaded = true
-                    return
-                }
-        }
-        if(loaded)
-        {
-            Text("We're ready, let's go!")
+            .offset(y: -50)
+            .animation(.spring(response: 0.8, dampingFraction: 0.001).repeatForever())
+            .task {
+                await api.load()
+            }
+            
         }
     }
+    
+    
 }
 
 struct LandingPage_Previews: PreviewProvider {

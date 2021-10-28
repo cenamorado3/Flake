@@ -8,9 +8,30 @@
 import SwiftUI
 
 struct RollOutView: View {
+    @ObservedObject var api = container.API
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack{//cats go here
+                Rectangle().fill(.mint).padding(.leading)
+                Rectangle().fill(.mint).padding(.trailing)
+            }
+            HStack{
+                Rectangle().fill(.mint).padding(.leading)
+                Rectangle().fill(.mint).padding(.trailing)
+            }
+            HStack{
+                Rectangle().fill(.mint).padding(.leading)
+                Rectangle().fill(.mint).padding(.trailing)
+                
+            }
+        }.offset(y: -10)
     }
+    
+    init()
+    {
+        print(container.API.Data)
+    }
+ 
 }
 
 struct RollOutView_Previews: PreviewProvider {
