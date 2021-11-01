@@ -10,7 +10,7 @@ var loaded = false
 struct LandingPage: View {
     @ObservedObject var api = container.API
     var body: some View {
-        if(api.l)
+        if(api.l)//something out UI changed from background threads -> is this a pthread?
         {
             RollOutView()
         }

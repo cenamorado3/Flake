@@ -17,7 +17,7 @@ class CatAPI : API
   
     func load() async
     {
-        await Task.sleep(5_000_000_000) 
+        await Task.sleep(1_000_000_000)
         //perform async API work here
         l = true
         Data["0"] = Cat(id: 5)
@@ -37,5 +37,4 @@ class CatAPI : API
 struct Cat
 {
     var id: Int
-    
 }

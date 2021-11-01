@@ -13,7 +13,7 @@ struct FlakeApp: App {
         WindowGroup {
             ContentView()
         }
-        //everything about is and will be purposefully awful, I have the intention of making things progressively worse and unreadable
+        //everything about is and will be purposefully awful, I have the intention of making things progressively worse and unreadable(i changed my mind, doing that would be to much work)
         //conceptually I will attempt to retain my sanity and make improvements to the design and traditional best practices
         //i love juxtaposition
     }

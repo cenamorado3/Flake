@@ -19,6 +19,8 @@
 		ECB765EA272A07C80063E330 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB765E9272A07C80063E330 /* LandingPage.swift */; };
 		ECB765EC272A0F790063E330 /* RollOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB765EB272A0F790063E330 /* RollOutView.swift */; };
 		ECB765EE272B25CB0063E330 /* CatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB765ED272B25CB0063E330 /* CatAPI.swift */; };
+		ECCD6F67272E86460044729A /* CatSplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCD6F66272E86460044729A /* CatSplashView.swift */; };
+		ECD043E3272E7FB900FA80DA /* CatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD043E2272E7FB900FA80DA /* CatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		ECB765E9272A07C80063E330 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		ECB765EB272A0F790063E330 /* RollOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollOutView.swift; sourceTree = "<group>"; };
 		ECB765ED272B25CB0063E330 /* CatAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatAPI.swift; sourceTree = "<group>"; };
+		ECCD6F66272E86460044729A /* CatSplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSplashView.swift; sourceTree = "<group>"; };
+		ECD043E2272E7FB900FA80DA /* CatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				ECB765E9272A07C80063E330 /* LandingPage.swift */,
 				ECB765EB272A0F790063E330 /* RollOutView.swift */,
 				ECB765ED272B25CB0063E330 /* CatAPI.swift */,
+				ECD043E2272E7FB900FA80DA /* CatView.swift */,
+				ECCD6F66272E86460044729A /* CatSplashView.swift */,
 			);
 			path = Flake;
 			sourceTree = "<group>";
@@ -275,10 +281,12 @@
 				ECB765EC272A0F790063E330 /* RollOutView.swift in Sources */,
 				ECB765922728F4F10063E330 /* ContentView.swift in Sources */,
 				ECB765EA272A07C80063E330 /* LandingPage.swift in Sources */,
+				ECD043E3272E7FB900FA80DA /* CatView.swift in Sources */,
 				ECB765902728F4F10063E330 /* FlakeApp.swift in Sources */,
 				ECB765E22728FBF20063E330 /* Home.swift in Sources */,
 				ECB765BA2728FA100063E330 /* DI.swift in Sources */,
 				ECB765EE272B25CB0063E330 /* CatAPI.swift in Sources */,
+				ECCD6F67272E86460044729A /* CatSplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

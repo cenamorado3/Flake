@@ -8,28 +8,44 @@
 import SwiftUI
 
 struct RollOutView: View {
+    @State private var viewProfile : Bool
     @ObservedObject var api = container.API
     var body: some View {
         VStack{
             HStack{//cats go here
-                Rectangle().fill(.mint).padding(.leading)
-                Rectangle().fill(.mint).padding(.trailing)
+                CatSplashView {
+                    return Cat(id: 1)//api.Data["0"]!
+                }.padding(.leading)
+                CatSplashView {
+                    return Cat(id: 2)//api.Data["0"]!
+                }.padding(.trailing)
             }
             HStack{
-                Rectangle().fill(.mint).padding(.leading)
-                Rectangle().fill(.mint).padding(.trailing)
+                CatSplashView {
+                    return Cat(id: 3)//api.Data["0"]!
+                }.padding(.leading)
+                CatSplashView {
+                    return Cat(id: 4)//api.Data["0"]!
+                }.padding(.trailing)
             }
             HStack{
-                Rectangle().fill(.mint).padding(.leading)
-                Rectangle().fill(.mint).padding(.trailing)
+                CatSplashView {
+                    return Cat(id: 5)//api.Data["0"]!
+                }.padding(.leading)
                 
+                CatSplashView {
+                    return Cat(id: 6)//api.Data["0"]!
+                }.padding(.trailing)
+       
             }
+
         }.offset(y: -10)
     }
-    
+
     init()
     {
         print(container.API.Data)
+        viewProfile = false
     }
  
 }

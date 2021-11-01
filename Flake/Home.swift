@@ -30,7 +30,7 @@ struct Home: View {
                        label: {
                            Text("Are you really \(user)?").foregroundColor(.mint)
                                
-                    }).offset(y: 30)
+                    })//.offset(y: 30)
                 
                     .animation(.spring(response: 0.2, dampingFraction: 0.2).repeatCount(1))
                     //, value: animate) this would work but it doesnt, ill worry about it later since it works without value using a deprecated function in iOS 15

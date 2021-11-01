@@ -17,6 +17,6 @@ class DI
 
  protocol API : ObservableObject
 {
-     var Data: [String: Cat] { get set }
      func load() async
+     var Data: [String: Cat] { get }
 }
