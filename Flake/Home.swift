@@ -14,7 +14,6 @@ struct Home: View {
     var body: some View {
         ZStack{
             Color.blue.ignoresSafeArea()
-            
             if(auth)
             {
 

@@ -12,7 +12,11 @@ struct CatSplashView: View {
     @State private var viewProfile : Bool
     var body: some View {
         ZStack{
-            Rectangle().fill(.mint)
+            Circle().fill(.mint)
+            Image(uiImage: UIImage(data: cat.imageBytes!)!).resizable()
+                .clipShape(Circle().scale())
+                .shadow(radius: 10)
+                .overlay(Circle().stroke(Color.mint, lineWidth: 5))
             //this button  holds great comedic value
             Button("     \n\n\n\n\n                                                    \n\n\n     \n\n") {
                 viewProfile = true;

@@ -14,27 +14,28 @@ struct RollOutView: View {
         VStack{
             HStack{//cats go here
                 CatSplashView {
-                    return Cat(id: 1)//api.Data["0"]!
-                }.padding(.leading)
-                CatSplashView {
-                    return Cat(id: 2)//api.Data["0"]!
-                }.padding(.trailing)
-            }
-            HStack{
-                CatSplashView {
-                    return Cat(id: 3)//api.Data["0"]!
-                }.padding(.leading)
-                CatSplashView {
-                    return Cat(id: 4)//api.Data["0"]!
-                }.padding(.trailing)
-            }
-            HStack{
-                CatSplashView {
-                    return Cat(id: 5)//api.Data["0"]!
+                    return api.Data["0"]!
                 }.padding(.leading)
                 
                 CatSplashView {
-                    return Cat(id: 6)//api.Data["0"]!
+                    return api.Data["1"]!
+                }.padding(.trailing)
+            }
+            HStack{
+                CatSplashView {
+                    return api.Data["2"]!
+                }.padding(.leading)
+                CatSplashView {
+                    return api.Data["3"]!
+                }.padding(.trailing)
+            }
+            HStack{
+                CatSplashView {
+                    return api.Data["4"]!
+                }.padding(.leading)
+                
+                CatSplashView {
+                    return api.Data["5"]!
                 }.padding(.trailing)
        
             }
@@ -44,7 +45,6 @@ struct RollOutView: View {
 
     init()
     {
-        print(container.API.Data)
         viewProfile = false
     }
  

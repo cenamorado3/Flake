@@ -11,8 +11,12 @@ struct CatView: View {
     var cat : Cat
     var body: some View {
         ZStack{
-            Rectangle().fill(.mint)
-            Text("Hello, \(cat.id)")
+           Rectangle().fill(.blue)
+            VStack
+            {
+                Text("You can find me at, \nhttps://cataas.com/cat/\(cat.Etag!)!").foregroundColor(.mint)
+                Image(uiImage: UIImage(data: cat.imageBytes!)!)
+            }
           
         }.ignoresSafeArea()
         
@@ -24,12 +28,4 @@ struct CatView: View {
         cat = Cat()
     }
 }
-
-struct CatView_Previews: PreviewProvider {
-    static var previews: some View {
-        CatView(Cat: {return Cat(id: 10)})
-    }
-}
-
-
 

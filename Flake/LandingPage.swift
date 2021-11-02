@@ -9,8 +9,9 @@ import SwiftUI
 var loaded = false
 struct LandingPage: View {
     @ObservedObject var api = container.API
+    @State private var l: Bool = false
     var body: some View {
-        if(api.l)//something out UI changed from background threads -> is this a pthread?
+        if(l)//something out UI changed from background threads -> is this a pthread?
         {
             RollOutView()
         }
@@ -20,7 +21,11 @@ struct LandingPage: View {
             .offset(y: -50)
             .animation(.spring(response: 0.8, dampingFraction: 0.001).repeatForever())
             .task {
+                
                 await api.load()
+                await Task.sleep(2_000_000_000)
+                print(api.Data)
+                l = true
             }
             
         }
