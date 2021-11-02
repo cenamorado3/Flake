@@ -14,7 +14,10 @@ struct CatView: View {
            Rectangle().fill(.blue)
             VStack
             {
-                Text("You can find me at, \nhttps://cataas.com/cat/\(cat.Etag!)!").foregroundColor(.mint)
+                
+                Link(destination: URL(string: "https://cataas.com/cat/\(cat.Etag!)")!) {
+                    Text("You can find me at, \nhttps://cataas.com/cat/\(cat.Etag!)!").foregroundColor(.mint)
+                }
                 Image(uiImage: UIImage(data: cat.imageBytes!)!)
             }
           
